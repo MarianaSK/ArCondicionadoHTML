@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aba de Relatorio do Projeto</title>
+        <link rel="stylesheet" href="estilos.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <figure>
+            <h1><img src="img\logotipo-opus-software.png" alt="Logo da OPUS Software"></h1>
+            <a id="googleplus" href="https://plus.google.com/+Opus-softwareBr" target="_blank">
+                <img src="img\googleplus.png" alt="simbolo googleplus" style="border=0">
+            </a>
+            <a id="twitter" href="https://twitter.com/opussoft" target="_blank">
+                <img src="img\twitter.png" alt="simbolo twitter" style="border=0">
+            </a>
+            <a id="facebook" href="https://pt-br.facebook.com/Opus.Software" target="_blank">
+                <img src="img\facebook.png" alt="simbolo facebook" style="border=0">
+            </a>    
+            <a id="linkedin" href="https://www.linkedin.com/company/opus-software/" target="_blank">
+                <img src="img\linkedin.png" alt="simbolo linkedin" style="width:32px;height:32px;border=0">
+            </a> 
+        </figure>
+        <nav>
+            <a href="projeto1Proposta.html" id="Proposta"><strong>Proposta</strong></a>
+            <a href="projeto1FasesProjeto.html" id="Relatorio"><strong>Relatório do Projeto</strong></a>
+            <a href="projeto1QuemSomos.html" id="Quemsomos"><strong>Quem Somos</strong></a>
+            <a href="projeto1Contato.html" id="Contato"><strong>Contato</strong></a>  
+            <h1>Materiais Utilizados</h1>
+            <ul>
+                <li>3 nodeMCU</li>
+                <li>1 display OLED 128x64</li>
+                <li>1 módulo com 2 relés</li>
+                <li>2 push button</li>
+                <li>1 chave com retenção</li>
+                <li>2 LEDs</li>
+                <li>Jumpers</li>
+                <li>3 protoboards</li>
+                <li>3 fontes 5V</li>
+            </ul>
+            <h1>Funções do Termostato</h1>
+            <ul>
+                <li><p><strong>Liga/Desliga do Termostato: </strong>O termostato deve ligar e desligar de acordo com o horário de funcionamento da Opus. Para isso fosse possível, foram consideras duas alternativa, utilizar um RTC(<i>Real Time Clock</i>) ou o protocolo NTP(<i>Network Time Protocol</i>). Foi escolhido o NTP, pois o RTC utiliza o protocolo de comunicação I2C, também utilizado pelo display OLED 128x64.</p></li>
+                <li><p><strong>Display OLED 128x34: </strong>Com a finalidade de mostrar o modo de operação do termostato (manual ou automático), o setpoint de temperatura escolhido pelo usuário, a temperatura ideal, a temperatura do escritório e se os sistemas de ventilação e refrigeração estão ligados ou desligados, optou-se pelo uso do display OLED.</p></li>
+                <li><p><strong>Botões de incremento/decremento de temperatura: </strong>Foram utilizados dois push button, um para dimunir a temperatura de setpoint e outro para aumentar. A lógica de ligar ou não o sistema de refrigeração depende muito do estado destes botões, pois caso a temperatura do módulo de controle ou a média das temperaturas seja maior do que o setpoint, a refrigeração deve ligar, caso contrário deve desligar.</p></li>
+                <li><p><strong>Botão para mudar o modo de operação: </strong>A primeira versão do projeto, almejava colocar em modo automático quando todos os clientes estivessem conectados ao servidor, caso contrário, deveria entrar no modo manual. Na segunda versão, foi pensado em escolher em qual dos modos o termostato deve operar sem depender a presença de todos os clientes. Para isso, pode ser utilizado uma chava de retenção ou uma chave gangorra. O projeto foi testado com as duas chaves, mas foi escolhida a primeira por parecer mais intuitivo, já que a gangorra tende a parecer algo mais relacionado a ligar/desligar alguma coisa.</p></li>
+                <li><p><strong>nodeMCU: </strong>Foi escolhido o nodeMCU por já possuir o módulo Wi-Fi embutido, utilizar a IDE Arduino como interface de programação e por atender as necessidades do projeto.</p></li>
+            </ul>
+            <a href="projeto1.html" id="Voltar"><strong>Voltar</strong></a>
+        </nav>
+    </body>
+</html>
