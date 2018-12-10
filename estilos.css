@@ -1,0 +1,76 @@
+figure {
+    background-color: dimgray;
+    text-align: justify;
+}
+
+body {
+    background-color: gray;
+    text-align: justify;
+}
+
+p {
+    color: whitesmoke;
+    padding: 0px 40px;
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 0px 40px;
+}
+
+h2 {
+    color: whitesmoke;
+    padding: 0px 40px;
+}
+
+h3 {
+    color: whitesmoke;
+    padding: 0px 40px;
+}
+
+ul {
+    color: whitesmoke;
+    padding: 0px 60px;
+}
+a{
+    color: whitesmoke;
+}
+#googleplus{
+    position: absolute; top: 100px; left: 1100px;
+}
+#twitter{
+    position: absolute; top: 100px; left: 1150px;
+}
+#facebook{
+    position: absolute; top: 100px; left: 1200px;
+}
+#linkedin{
+    position: absolute; top: 100px; left: 1250px;
+}
+#Proposta{
+    position: absolute; top: 120px; left: 680px;
+    color: rgb(182, 8, 8);
+}
+#Relatorio{
+    position: absolute; top: 120px; left: 750px;
+    color: rgb(182, 8, 8);
+}
+#Quemsomos{
+    position: absolute; top: 120px; left: 900px;
+    color: rgb(182, 8, 8);
+}
+#Contato{
+    position: absolute; top: 120px; left: 1000px;
+    color: rgb(182, 8, 8);
+}
+#Voltar{
+    position: absolute; top: 170px; left: 1280px;
+    color: rgb(182, 8, 8);
+}
+#QuemSomosTexto{
+    text-align: center;
+    height: 40px;
+}
+#nodeMCU{
+    padding: 0px 400px;
+}
